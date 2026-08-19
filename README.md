@@ -1,4 +1,7 @@
 # Nand2Tetris
+<h4>How a computer system is built from the ground up — starting with basic logic gates and progressing towards hardware, machine language, and software.</h3> 
+
+---
 
 **Name:** Suhani Yadav <br>
 **Roll No:** 2501410032
