@@ -23,7 +23,7 @@ Implemented `NOT`, `AND`, and `OR` gates using only NAND gates in HDL, along wit
 Implemented `XOR`, `2-way Mux`, `4-way Mux`, and `DMux` chips in HDL, with truth tables and verification using Nand2Tetris test scripts.
 
 ---
-### Lab 2 : [View](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab 2)
+### Lab 2 : [View](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab%202)
 
 **Q3 — NOT16, Mux4Way16, Mux8Way16**
 Implemented `NOT16`, `Mux4Way16`, and `Mux8Way16` chips in HDL, with truth tables and verification using Nand2Tetris test scripts.
