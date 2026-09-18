@@ -14,6 +14,7 @@
 | Lab 1 | Boolean Logic & Multiplexing    | ✅ Completed |
 | Lab 2 | 4×1 and 8×1 Multiplexing        | ✅ Completed |
 | Lab 3 | Half Adder, Full Adder & Add16  | ✅ Completed |
+| Lab 4 | ALU Implementation              | ✅ Completed |
 
 ### Lab 1 : [View](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab1)
 
