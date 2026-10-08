@@ -15,6 +15,7 @@
 | Lab 2 | 4×1 and 8×1 Multiplexing        | ✅ Completed |
 | Lab 3 | Half Adder, Full Adder & Add16  | ✅ Completed |
 | Lab 4 | ALU Implementation              | ✅ Completed |
+| Lab 5 | Memory & Sequential Logic       | ✅ Completed |
 
 ### Lab 1 : [View](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab1)
 
@@ -44,5 +45,12 @@ Implemented `HalfAdder`, `FullAdder`, and `Add16` chips in HDL, with logic diagr
 Implemented `Alu` chips in HDL, with logic diagrams, Boolean expressions, and verification using Nand2Tetris test scripts.
 
 ---
+### Lab 5 : [View](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab%205)
+
+**Q6 — Memory & Sequential Logic**  
+Implemented `Bit`, `Register`, `RAM8`, `RAM64`, and `PC` chips in HDL, demonstrating sequential logic, registers, memory hierarchy, and program-counter functionality, with verification using Nand2Tetris test scripts.
+
+---
+
 **Platform:**
 [HDL / Hardware Simulator](https://nand2tetris.github.io/web-ide/chip/)
