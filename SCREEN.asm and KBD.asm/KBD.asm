@@ -1,0 +1,9 @@
+@KBD
+D=M
+@113
+D=D-A
+@END
+0;JEQ
+(END)
+@END
+0;JMP
