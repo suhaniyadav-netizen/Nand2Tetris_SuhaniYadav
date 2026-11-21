@@ -1,0 +1,17 @@
+branch.asm
+@R0
+D=M
+@R1
+D=D-M
+@GREATER
+D;JGT
+@R2
+M=0
+@END
+0;JMP
+(GREATER)
+@R2
+M=1
+(END)
+@END
+0;JMP
