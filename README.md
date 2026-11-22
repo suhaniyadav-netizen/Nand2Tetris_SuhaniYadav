@@ -4,10 +4,9 @@ Building a general-purpose computer system from the ground up — starting from 
 
 ---
 
-### Student Information
+### Student Info
 - **Name:** Suhani Yadav  
-- **Roll No:** 2501410032  
-- **Repository:** [Nand2Tetris_SuhaniYadav](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav)  
+- **Roll No:** 2501410032   
 
 ---
 
@@ -51,13 +50,13 @@ Nand2Tetris_SuhaniYadav/
 
 | Module | Category | Primary Components / Topics | Status | Directory Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Project 1** | Boolean Logic | Basic gates (`Nand` primitives), Multiplexers, Demultiplexers | Completed | [View Files](./Project%201) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Project%201) |
-| **Project 2** | Boolean Arithmetic | Half/Full Adders, 16-bit Adder, Arithmetic Logic Unit (`ALU`) | Completed | [View Files](./Project%202) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Project%202) |
-| **Project 3** | Sequential Logic | Flip-flops, Registers, Program Counter (`PC`), RAM hierarchy | Completed | [View Files](./Project%203) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Project%203) |
-| **Project 5** | Architecture | Central Processing Unit (`CPU`), 32K `Memory`, `Computer` | Completed | [View Files](./Project%205) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Project%205) |
-| **Lab 3** | CPU Diagnostics | Assembly testing: addition, conditional branching, loops | Completed | [View Files](./Lab%203%20-%20CPU%20Architecture%20%26%20Diagnostic%20Testing) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/Lab%203%20-%20CPU%20Architecture%20%26%20Diagnostic%20Testing) |
-| **I/O Assembly** | Memory-Mapped I/O | Direct pixel manipulation (`SCREEN`) and keyboard polling (`KBD`) | Completed | [View Files](./SCREEN.asm%20and%20KBD.asm) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/SCREEN.asm%20and%20KBD.asm) |
-| **Capstone** | Full-Stack Integration | Hardware integration, Two-pass Assembler, Interactive Box application | Completed | [View Files](./capstone) \| [Documentation](./capstone/README.md) \| [GitHub](https://github.com/suhaniyadav-netizen/Nand2Tetris_SuhaniYadav/tree/main/capstone) |
+| **Project 1** | Boolean Logic | Basic gates (`Nand` primitives), Multiplexers, Demultiplexers | Completed | [View Files](./Project%201) \| 
+| **Project 2** | Boolean Arithmetic | Half/Full Adders, 16-bit Adder, Arithmetic Logic Unit (`ALU`) | Completed | [View Files](./Project%202) \| 
+| **Project 3** | Sequential Logic | Flip-flops, Registers, Program Counter (`PC`), RAM hierarchy | Completed | [View Files](./Project%203) \| 
+| **Project 5** | Architecture | Central Processing Unit (`CPU`), 32K `Memory`, `Computer` | Completed | [View Files](./Project%205) \| 
+| **Lab 3** | CPU Diagnostics | Assembly testing: addition, conditional branching, loops | Completed | [View Files](./Lab%203%20-%20CPU%20Architecture%20%26%20Diagnostic%20Testing) \| 
+| **I/O Assembly** | Memory-Mapped I/O | Direct pixel manipulation (`SCREEN`) and keyboard polling (`KBD`) | Completed | [View Files](./SCREEN.asm%20and%20KBD.asm) \ |
+| **Capstone** | Full-Stack Integration | Hardware integration, Two-pass Assembler, Interactive Box application | Completed | [View Files](./capstone) \| [Documentation](./capstone/README.md) \|
 
 ---
 
@@ -72,7 +71,7 @@ Explores combinational logic built entirely from fundamental `Nand` gates.
 - **16-Bit & Multi-Way Buses:**
   - [Not16.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%201/Not16.hdl), [Mux4Way16.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%201/Mux4Way16.hdl), [Mux8Way16.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%201/Mux8Way16.hdl)
 
-Local Folder: [Project 1/](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%201)
+
 
 ---
 
@@ -85,7 +84,7 @@ Constructs the computational core of the computer, culminating in the Hack Arith
 - **Arithmetic Logic Unit:**
   - [ALU.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%202/ALU.hdl): Computes 18 arithmetic/logical operations on two 16-bit registers controlled by 6 control bits (`zx, nx, zy, ny, f, no`), with zero (`zr`) and negative (`ng`) status flags.
 
-Local Folder: [Project 2/](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%202)
+
 
 ---
 
@@ -102,7 +101,7 @@ Introduces clocked storage elements built upon data flip-flops (DFF).
   - [RAM4K.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%203/RAM4K.hdl) (4096 registers)
   - [RAM16K.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%203/RAM16K.hdl) (16384 registers)
 
-Local Folder: [Project 3/](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%203)
+
 
 ---
 
@@ -115,7 +114,7 @@ Integrates the complete microarchitecture according to the Von Neumann model.
 - [CPU.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%205/CPU.hdl): Central Processing Unit decoding A/C instructions, register routing (`A`, `D`), condition evaluations, and program flow control.
 - [Computer.hdl](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%205/Computer.hdl): Top-level chip tying CPU, Memory, and `ROM32K` together.
 
-Local Folder: [Project 5/](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/Project%205)
+
 
 ---
 
