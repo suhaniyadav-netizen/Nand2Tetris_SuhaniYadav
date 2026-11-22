@@ -2,14 +2,14 @@
 
 ---
 
-### 👤 Student Information
+### Student Information
 - **Name:** Suhani Yadav  
 - **Roll No:** 2501410032  
 - **Personalized Parameter:** $K = 32$ (Roll Number suffix `32`)  
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 The **Nand2Tetris Capstone** marks the complete integration of the hardware and software layers of the Hack computer system. Starting from fundamental combinational and sequential gates, this capstone delivers:
 
@@ -19,7 +19,7 @@ The **Nand2Tetris Capstone** marks the complete integration of the hardware and 
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 | File | Type | Description |
 | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ The **Nand2Tetris Capstone** marks the complete integration of the hardware and 
 
 ---
 
-## 🏗️ Hardware Architecture & Implementation
+## Hardware Architecture & Implementation
 
 ```plaintext
                    +---------------------------------------+
@@ -81,7 +81,7 @@ Implements a 32K continuous address space through high-order bit decoding (`addr
 
 ---
 
-## 🐍 Two-Pass Hack Assembler ([assembler.py](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/assembler.py))
+## Two-Pass Hack Assembler ([assembler.py](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/assembler.py))
 
 A Python translation toolchain converting Hack assembly into 16-bit binary machine code.
 
@@ -98,7 +98,7 @@ A Python translation toolchain converting Hack assembly into 16-bit binary machi
 
 ---
 
-## 🎮 Interactive Box Program ([Box.asm](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/Box.asm))
+## Interactive Box Program ([Box.asm](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/Box.asm))
 
 A low-level assembly application demonstrating memory-mapped I/O interaction between the keyboard and the display screen.
 
@@ -122,37 +122,75 @@ A low-level assembly application demonstrating memory-mapped I/O interaction bet
 
 ---
 
-## 📸 Verification & Screenshots
+## Verification & Screenshots
 
-### 1. Hardware Verification (Hardware Simulator)
+### 1. Interactive Program Execution (`Box.hack`) - Main Capstone Demonstration
 
-#### CPU (`CPU.hdl`)
-Verified arithmetic operations, register writeback, and branching conditions ([CPU.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/CPU.png)).  
+The interactive application demonstrates real-time hardware-software co-design via memory-mapped I/O on the CPU Emulator.
+
+#### Idle State (Key Released)
+When no key is pressed (`KBD = 0`), the screen remains clear (white) at memory address `17408` (row 32, column 0).  
+Reference file: [Box(0).png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Box(0).png)
+
+[![Box Key Released](<screenshots/Box(0).png>)](<screenshots/Box(0).png>)
+
+---
+
+#### Active State (Key Pressed)
+When any key is pressed (`KBD > 0`), the application immediately renders the $16 \times 20$ black rectangular block starting at row 32, column 0 (base address `17408`).  
+Reference file: [Box(-1).png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Box(-1).png)
+
+[![Box Key Pressed](<screenshots/Box(-1).png>)](<screenshots/Box(-1).png>)
+
+---
+
+### 2. Hardware Verification (Hardware Simulator)
+
+#### CPU Chip Verification (`CPU.hdl`)
+Verified arithmetic operations, register writeback, and conditional branching logic using `CPU.tst`.  
+Reference file: [CPU.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/CPU.png)
+
 [![CPU Verification](screenshots/CPU.png)](<screenshots/CPU.png>)
 
-#### Memory (`Memory.hdl`)
-Verified RAM16K, Screen map ($16384-24575$), and Keyboard register ($24576$) ([Memory.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Memory.png)).  
+---
+
+#### Memory System Verification (`Memory.hdl`)
+Verified addressing across RAM16K (`0 - 16383`), Screen memory map (`16384 - 24575`), and Keyboard register (`24576`) using `Memory.tst`.  
+Reference file: [Memory.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Memory.png)
+
 [![Memory Verification](screenshots/Memory.png)](<screenshots/Memory.png>)
 
-#### Computer Integration (`Computer.hdl`)
+---
 
-| Add Test ([ComputerAdd.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerAdd.png)) | Max Test ([ComputerMax.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerMax.png)) | Rect Test ([ComputerRect.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerRect.png)) |
-| :---: | :---: | :---: |
-| [![Computer Add](screenshots/ComputerAdd.png)](<screenshots/ComputerAdd.png>) | [![Computer Max](screenshots/ComputerMax.png)](<screenshots/ComputerMax.png>) | [![Computer Rect](screenshots/ComputerRect.png)](<screenshots/ComputerRect.png>) |
-| *Computes $2+3=5$ into RAM[0]* | *Branch logic max(R0, R1)* | *Draws rectangle to screen* |
+### 3. Integrated Computer Execution (`Computer.hdl`)
+
+The top-level computer architecture was verified using standard Hack benchmark suites in the Hardware Simulator.
+
+#### Add Benchmark (`Add.hack`)
+Computes the arithmetic sum $2 + 3 = 5$, verifying data memory write to `RAM[0]`.  
+Reference file: [ComputerAdd.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerAdd.png)
+
+[![Computer Add](screenshots/ComputerAdd.png)](<screenshots/ComputerAdd.png>)
 
 ---
 
-### 2. Interactive Program Execution (`Box.hack`)
+#### Max Benchmark (`Max.hack`)
+Evaluates branch conditions, computing $\max(\text{RAM}[0], \text{RAM}[1])$ into `RAM[2]`.  
+Reference file: [ComputerMax.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerMax.png)
 
-| Key Released ([Box(0).png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Box(0).png)) | Key Pressed ([Box(-1).png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/Box(-1).png)) |
-| :---: | :---: |
-| [![Box Key Released](<screenshots/Box(0).png>)](<screenshots/Box(0).png>) | [![Box Key Pressed](<screenshots/Box(-1).png>)](<screenshots/Box(-1).png>) |
-| *KBD = 0: Screen remains white (idle)* | *KBD > 0: $16 \times 20$ black box rendered at row 32* |
+[![Computer Max](screenshots/ComputerMax.png)](<screenshots/ComputerMax.png>)
 
 ---
 
-## 🚀 How to Run
+#### Rect Benchmark (`Rect.hack`)
+Draws a rectangle of variable height to screen memory, validating memory-mapped screen writes.  
+Reference file: [ComputerRect.png](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots/ComputerRect.png)
+
+[![Computer Rect](screenshots/ComputerRect.png)](<screenshots/ComputerRect.png>)
+
+---
+
+## How to Run
 
 1. **Assemble the Assembly Code:**
    ```bash
