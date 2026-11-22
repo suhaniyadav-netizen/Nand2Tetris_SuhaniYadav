@@ -50,13 +50,13 @@ Nand2Tetris_SuhaniYadav/
 
 | Module | Category | Primary Components / Topics | Status | Directory Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Project 1** | Boolean Logic | Basic gates (`Nand` primitives), Multiplexers, Demultiplexers | Completed | [View Files](./Project%201) \| 
-| **Project 2** | Boolean Arithmetic | Half/Full Adders, 16-bit Adder, Arithmetic Logic Unit (`ALU`) | Completed | [View Files](./Project%202) \| 
-| **Project 3** | Sequential Logic | Flip-flops, Registers, Program Counter (`PC`), RAM hierarchy | Completed | [View Files](./Project%203) \| 
-| **Project 5** | Architecture | Central Processing Unit (`CPU`), 32K `Memory`, `Computer` | Completed | [View Files](./Project%205) \| 
-| **Lab 3** | CPU Diagnostics | Assembly testing: addition, conditional branching, loops | Completed | [View Files](./Lab%203%20-%20CPU%20Architecture%20%26%20Diagnostic%20Testing) \| 
-| **I/O Assembly** | Memory-Mapped I/O | Direct pixel manipulation (`SCREEN`) and keyboard polling (`KBD`) | Completed | [View Files](./SCREEN.asm%20and%20KBD.asm) \ |
-| **Capstone** | Full-Stack Integration | Hardware integration, Two-pass Assembler, Interactive Box application | Completed | [View Files](./capstone) \| [Documentation](./capstone/README.md) \|
+| **Project 1** | Boolean Logic | Basic gates (`Nand` primitives), Multiplexers, Demultiplexers | Completed | [View Files](./Project%201) 
+| **Project 2** | Boolean Arithmetic | Half/Full Adders, 16-bit Adder, Arithmetic Logic Unit (`ALU`) | Completed | [View Files](./Project%202) 
+| **Project 3** | Sequential Logic | Flip-flops, Registers, Program Counter (`PC`), RAM hierarchy | Completed | [View Files](./Project%203) 
+| **Project 5** | Architecture | Central Processing Unit (`CPU`), 32K `Memory`, `Computer` | Completed | [View Files](./Project%205) 
+| **Lab 3** | CPU Diagnostics | Assembly testing: addition, conditional branching, loops | Completed | [View Files](./Lab%203%20-%20CPU%20Architecture%20%26%20Diagnostic%20Testing) 
+| **I/O Assembly** | Memory-Mapped I/O | Direct pixel manipulation (`SCREEN`) and keyboard polling (`KBD`) | Completed | [View Files](./SCREEN.asm%20and%20KBD.asm)  
+| **Capstone** | Full-Stack Integration | Hardware integration, Two-pass Assembler, Interactive Box application | Completed | [View Files](./capstone) [Documentation](./capstone/README.md) 
 
 ---
 
@@ -139,8 +139,6 @@ The culmination of the Nand2Tetris curriculum, synthesizing microarchitecture de
 - **Interactive Box Program ([Box.asm](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/Box.asm) / [Box.hack](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/Box.hack)):**
   Calibrated for $K = 32$ (Row 32, Offset 1024 words, Start Address 17408, Size $16 \times 20$ pixels). Utilizes differential state-tracking (`last_color`) for instant, flicker-free keyboard interaction.
 - **Verification Records:** Comprehensive test runs ([screenshots/](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/screenshots)) verifying CPU, Memory, Computer benchmarks (`Add`, `Max`, `Rect`), and interactive application states.
-
-Detailed documentation: [capstone/README.md](file:///C:/Users/Suhani%20Yadav/OneDrive/Desktop/College/Nand2Tetris_SuhaniYadav/capstone/README.md)
 
 ---
 
