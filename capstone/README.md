@@ -1,4 +1,4 @@
-# Nand2Tetris Capstone Project: General-Purpose Computer Architecture & Software Stack
+# Capstone Project -  Make the Computer Draw a Box
 
 ---
 
